@@ -21,19 +21,23 @@ Este projeto demonstra como aproveitar modelos pré-treinados (MobileNetV2) para
 ## 📦 Instalação
 1. Clone o repositório:
    git clone https://github.com/gguedes00/Transfer-Learning
+   
    ou acesse o link do colab:
    https://colab.research.google.com/drive/1EyUpSQ93c_Dbytf9h64hJQ9ItbDs9jm7?usp=sharing
 
    
 Instale as dependências:
-  pip install tensorflow tensorflow_datasets matplotlib numpy
+
+   pip install tensorflow tensorflow_datasets matplotlib numpy
 
 🚀 Como Usar
 
 1. Preparação do Dataset
 
 Carrega o dataset cats_vs_dogs do TensorFlow Datasets.
+
 Divide em 80% para treino e 20% para validação.
+
 Pré-processa as imagens (redimensiona para 224x224, normaliza para o MobileNetV2).
 
 3. Arquitetura do Modelo
@@ -59,12 +63,15 @@ Fase 1 (Camadas Congeladas):
 Treina o classificador sobre o MobileNetV2.
 
 2 épocas, otimizador Adam, loss de entropia cruzada binária.
+
 Resultado: ~98.8% de acurácia na validação.
 
 Fase 2 (Fine-Tuning):
 
 Descongela as últimas 54 camadas do MobileNetV2.
+
 Treina com taxa de aprendizado reduzida (1e-5).
+
 Resultado: ~98.5% de acurácia na validação.
 
 4. Avaliação   
@@ -76,28 +83,31 @@ Resultado: ~98.5% de acurácia na validação.
 | 2     | 98.81%            | 98.99%                |
 
 
-5. Exportar o Modelo
-
-  model.save('meu_modelo.keras')  
-
 📊 Resultados
 Fase	Acurácia na Validação	Perda na Validação
 
 Treino Inicial	98.88%	0.0341
+
 Fine-Tuning	98.56%	0.0425
 
 🔧 Melhorias Futuras
 
 Aumentar o número de épocas no fine-tuning.
+
 Adicionar aumento de dados (data augmentation: rotação, flip).
+
 Testar outras arquiteturas (EfficientNet, ResNet).
+
 Fazer deploy como API web usando Flask/TensorFlow Serving.
 
 🤝 Contribuição
 
 Contribuições são bem-vindas! Abra uma issue ou envie um pull request para:
+
 Correções de bugs
+
 Otimizações de desempenho
+
 Novos recursos
 
 
@@ -108,7 +118,10 @@ Licença MIT. Veja LICENSE para detalhes.
 🙏 Agradecimentos
 
 Equipes do TensorFlow e Keras pelo framework.
+
 Google Research pelo MobileNetV2.
+
 TensorFlow Datasets pelo dataset cats_vs_dogs.
-Equipe DIO pelo bootcamp.
+
+**Equipe DIO pelo bootcamp.**
 
