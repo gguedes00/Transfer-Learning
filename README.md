@@ -2,6 +2,7 @@
 
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.18.0-orange)
 ![Licença](https://img.shields.io/badge/Licen%C3%A7a-MIT-blue)
+![DIO](https://img.shields.io/badge/Parceiro-DIO-000?style=flat&logo=data:image/png;base64,...)
 
 Projeto de deep learning para classificação binária de imagens de gatos e cães usando **Transfer Learning** com MobileNetV2, alcançando mais de **98% de acurácia na validação**.
 
