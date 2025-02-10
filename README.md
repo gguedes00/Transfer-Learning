@@ -24,7 +24,7 @@ Este projeto aplica **Transfer Learning** usando o modelo MobileNetV2 para class
 
 ## Como Executar
 1. **Acesse o Notebook no Colab**:  
-   [Clique aqui para abrir o notebook]([https://colab.research.google.com/...](https://colab.research.google.com/github/gguedes00/Transfer-Learning/blob/main/desafio_Transfer_Learning.ipynb))
+   [Clique aqui para abrir o notebook]([[https://colab.research.google.com/...](https://colab.research.google.com/github/gguedes00/Transfer-Learning/blob/main/desafio_Transfer_Learning.ipynb](https://colab.research.google.com/drive/1EyUpSQ93c_Dbytf9h64hJQ9ItbDs9jm7?usp=sharing)))
 
 2. **Execute todas as células**:
    ```python
