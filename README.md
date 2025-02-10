@@ -125,3 +125,6 @@ TensorFlow Datasets pelo dataset cats_vs_dogs.
 
 **Equipe DIO pelo bootcamp.**
 
+Contato: ggguedes00@gmail.com
+GitHub: github.com/gguedes00
+
