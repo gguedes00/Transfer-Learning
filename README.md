@@ -31,11 +31,13 @@ Instale as dependências:
 🚀 Como Usar
 
 1. Preparação do Dataset
+
 Carrega o dataset cats_vs_dogs do TensorFlow Datasets.
 Divide em 80% para treino e 20% para validação.
 Pré-processa as imagens (redimensiona para 224x224, normaliza para o MobileNetV2).
 
-2. Arquitetura do Modelo 
+3. Arquitetura do Modelo
+
 base_model = tf.keras.applications.MobileNetV2(
     input_shape=(224, 224, 3),
     include_top=False,
@@ -51,13 +53,16 @@ model = tf.keras.Sequential([
 
 
 3. Treinamento
+   
 Fase 1 (Camadas Congeladas):
+
 Treina o classificador sobre o MobileNetV2.
 
 2 épocas, otimizador Adam, loss de entropia cruzada binária.
 Resultado: ~98.8% de acurácia na validação.
 
 Fase 2 (Fine-Tuning):
+
 Descongela as últimas 54 camadas do MobileNetV2.
 Treina com taxa de aprendizado reduzida (1e-5).
 Resultado: ~98.5% de acurácia na validação.
@@ -72,6 +77,7 @@ Resultado: ~98.5% de acurácia na validação.
 
 
 5. Exportar o Modelo
+
   model.save('meu_modelo.keras')  
 
 📊 Resultados
@@ -81,12 +87,14 @@ Treino Inicial	98.88%	0.0341
 Fine-Tuning	98.56%	0.0425
 
 🔧 Melhorias Futuras
+
 Aumentar o número de épocas no fine-tuning.
 Adicionar aumento de dados (data augmentation: rotação, flip).
 Testar outras arquiteturas (EfficientNet, ResNet).
 Fazer deploy como API web usando Flask/TensorFlow Serving.
 
 🤝 Contribuição
+
 Contribuições são bem-vindas! Abra uma issue ou envie um pull request para:
 Correções de bugs
 Otimizações de desempenho
@@ -94,9 +102,11 @@ Novos recursos
 
 
 📜 Licença
+
 Licença MIT. Veja LICENSE para detalhes.
 
 🙏 Agradecimentos
+
 Equipes do TensorFlow e Keras pelo framework.
 Google Research pelo MobileNetV2.
 TensorFlow Datasets pelo dataset cats_vs_dogs.
